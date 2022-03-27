@@ -1,11 +1,12 @@
 {
     "expo": {
         "name": "Navitron",
-        "version": "1.0.0",
+        "version": "1.0.2",
+        "icon": "icon.png",
         "slug": "navitron",
         "ios": {
             "bundleIdentifier": "com.jererobles.navitron",
-            "buildNumber": "1.0.0"
+            "buildNumber": "1.0.2"
         },
         "android": {
             "package": "com.jererobles.navitron",

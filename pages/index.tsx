@@ -197,6 +197,16 @@ function HomeScreen({ navigation }) {
                     <Picker.Item label="1 hour" value="1:00" />
                     <Picker.Item label="1 hour 15 minutes" value="1:15" />
                     <Picker.Item label="1 hour 30 minutes" value="1:30" />
+                    <Picker.Item label="1 hour 45 minutes" value="1:45" />
+                    <Picker.Item label="2 hours" value="2:00" />
+                    <Picker.Item label="2 hours 15 minutes" value="2:15" />
+                    <Picker.Item label="2 hours 30 minutes" value="2:30" />
+                    <Picker.Item label="2 hours 45 minutes" value="2:45" />
+                    <Picker.Item label="3 hours" value="3:00" />
+                    <Picker.Item label="3 hours 15 minutes" value="3:15" />
+                    <Picker.Item label="3 hours 30 minutes" value="3:30" />
+                    <Picker.Item label="3 hours 45 minutes" value="3:45" />
+                    <Picker.Item label="4 hours" value="4:00" />
                 </Picker>
                 <Button
                     title="Search Navi"

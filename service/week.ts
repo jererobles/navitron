@@ -24,7 +24,8 @@ export class Day {
         for (let freeSlot of this.times) {
             const freeSlotStart = freeSlot.minuteFromDayStart;
             const freeSlotEnd = freeSlotStart + freeSlot.minuteDuration;
-            if (freeSlotEnd >= anytimeStartingFrom && freeSlotStart <= anytimeEndingBefore && freeSlot.minuteDuration >= minuteDuration) {
+            if (freeSlotEnd >= anytimeStartingFrom && freeSlotStart < anytimeEndingBefore && freeSlot.minuteDuration >= minuteDuration
+                && (freeSlotStart + minuteDuration <= anytimeEndingBefore)) {
                 matchingFreeSlots.push(freeSlot);
             }
         }
