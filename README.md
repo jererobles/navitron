@@ -12,7 +12,7 @@ An easy way to find available meeting rooms in the university of Jyväskylä cam
 ```bash
 git clone git@github.com:jererobles/navitron.git
 cd navitron
-yarn install
+yarn
 expo web
 ```
 
@@ -21,3 +21,8 @@ expo web
 -   [x] iOS app
 -   [ ] Android app
 -   [ ] Web app
+-   [ ] Support for buildings other than the library
+-   [ ] Broken things that are a PITA to accomplish in ReactNative in 2022
+-   Dark mode support
+-   Modal screen has inconsistent height
+-   Search button should be pill-shaped

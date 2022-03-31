@@ -9,6 +9,7 @@ import {
     ActivityIndicator,
     SectionList,
 } from "react-native";
+
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { Picker } from "@react-native-picker/picker";
 import DropDownPicker from "react-native-dropdown-picker";
@@ -339,15 +340,17 @@ export default function App() {
         <NavigationContainer>
             <RootStack.Navigator>
                 <RootStack.Group>
-                    <RootStack.Screen name="Home" component={HomeScreen} />
+                    <RootStack.Screen name="Home" component={HomeScreen} options={{ title: "Navitron" }} />
                 </RootStack.Group>
                 <RootStack.Group screenOptions={{ presentation: "modal" }}>
                     <RootStack.Screen
                         name="SearchResult"
                         component={RoomsList}
-                        options={{
-                            headerShown: false,
-                        }}
+                        options={({ navigation }) => ({
+                            headerShown: true,
+                            title: 'Available Rooms',
+                            headerRight: () => <Button onPress={() => navigation.pop()} title="Done" />,
+                        })}
                     />
                 </RootStack.Group>
             </RootStack.Navigator>
